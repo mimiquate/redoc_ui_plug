@@ -43,7 +43,7 @@ defmodule Redoc.Plug.RedocUI do
     <body>
       <redoc
         <%= for {k, v} <- redoc_opts do %>
-         <%= k %>="<%= v %>"
+         <%= k %>='<%= v %>'
         <% end %>
       ></redoc>
       <script src="https://cdn.jsdelivr.net/npm/redoc@<%= Plug.HTML.html_escape(redoc_version) %>/bundles/redoc.standalone.js"></script>
